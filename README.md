@@ -27,6 +27,15 @@ It added an extra unit test to manage the behavior for first 2 extra points.
 
 All the source code is documented by JavaDoc
 
+## Implemented Tools
+
+The project was built using the next technological tools:
+
+- Java 8
+- Maven 3
+- Spring Framework 5
+- Spring Boot 2.0.4.RELEASE
+
 ## Run The Project
 
 To run the project you should execute the next command on terminal:
