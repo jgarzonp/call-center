@@ -1,0 +1,47 @@
+management:
+  server:
+    port: 6000
+    servlet:
+      context-path: /management
+  endpoint:
+    info:
+      enabled: true
+    health:
+      enabled: true
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ["info", "health"]
+
+spring:
+  application:
+    name: CallCenter
+  profiles:
+    active: dev
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+  jackson:
+    serialization.indent_output: true
+    default-property-inclusion: non_null
+    serialization.write_dates_as_timestamps: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /contact-center
+    session:
+      cookie:
+        http-only: true
+
+info:
+  project:
+    version: #project.version#
+
+application:
+  managersSize: 1
+  operatorsSize: 7
+  supervisorsSize: 2
